@@ -5,8 +5,8 @@ import 'package:flutter_svg/flutter_svg.dart';
 import 'package:portfolio_o/util/textconstant/textconstant.dart';
 import 'package:url_launcher/url_launcher.dart';
 
-class ContentCard1 extends StatelessWidget {
-  const ContentCard1({
+class ContentCard2 extends StatelessWidget {
+  const ContentCard2({
     super.key,
   });
 
@@ -32,11 +32,15 @@ class ContentCard1 extends StatelessWidget {
               height: 70,
             ),
             Text(
-              "SpareSpace is using for vechile owners",
+              "Test knowledge, compete,",
               style: NeededTextstyles.ultimatetext,
             ),
             Text(
-              "and it help to find the sparepart easily.",
+              "track  progress,",
+              style: NeededTextstyles.ultimatetext,
+            ),
+            Text(
+              "interactive platform for learning.",
               style: NeededTextstyles.ultimatetext,
             ),
             SizedBox(
@@ -45,12 +49,12 @@ class ContentCard1 extends StatelessWidget {
             ),
             InkWell(
               onTap: () {
-                _launchURL("https://github.com/swathishkumar/spareparts.git");
+                _launchURL("https://github.com/swathishkumar/quizapp.git");
               },
               child: Row(
                 children: [
                   Text(
-                    "Sparespace",
+                    "Quiz App",
                     style: NeededTextstyles.ultimate2,
                   ),
                   SizedBox(
@@ -67,11 +71,11 @@ class ContentCard1 extends StatelessWidget {
           ],
         ),
         Container(
-          height: 500,
-          width: 400,
+          height: 600,
+          width: 300,
           decoration: BoxDecoration(
               image: DecorationImage(
-                  image: AssetImage("asset/mobile (1).png"), fit: BoxFit.fill)),
+                  image: AssetImage("asset/emo.png"), fit: BoxFit.fill)),
         )
       ],
     );

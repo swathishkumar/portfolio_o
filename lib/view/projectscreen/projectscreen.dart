@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:portfolio_o/model/globalwidgets/contactcard/contactcard.dart';
 import 'package:portfolio_o/model/globalwidgets/customappbar/customappbar.dart';
 import 'package:portfolio_o/view/projectscreen/widget/contentcard1.dart';
+import 'package:portfolio_o/view/projectscreen/widget/contentcard2.dart';
 
 class Projectscreen extends StatefulWidget {
   const Projectscreen({super.key});
@@ -22,25 +23,42 @@ class _ProjectscreenState extends State<Projectscreen> {
             double maxWidth = constraints.maxWidth;
             return SingleChildScrollView(
               scrollDirection: Axis.vertical,
-              child: Column(
-                children: [
-                  SizedBox(
-                    height: 230,
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.all(8.0),
-                    child: Container(
-                      height: 700,
-                      width: maxWidth * 0.9,
-                      decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(10),
-                        color: Colors.red.withOpacity(0.2),
-                      ),
-                      child: ContentCard1(),
+              child: Center(
+                child: Column(
+                  children: [
+                    SizedBox(
+                      height: 230,
                     ),
-                  ),
-                  Contactcard()
-                ],
+                    Padding(
+                      padding: const EdgeInsets.all(12.0),
+                      child: Container(
+                        height: 700,
+                        width: maxWidth * 0.9,
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(10),
+                          color: Colors.red.withOpacity(0.2),
+                        ),
+                        child: ContentCard1(),
+                      ),
+                    ),
+                    SizedBox(
+                      height: 50,
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: Container(
+                        height: 700,
+                        width: maxWidth * 0.9,
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(10),
+                          color: Colors.green.withOpacity(0.2),
+                        ),
+                        child: ContentCard2(),
+                      ),
+                    ),
+                    Contactcard()
+                  ],
+                ),
               ),
             );
           },

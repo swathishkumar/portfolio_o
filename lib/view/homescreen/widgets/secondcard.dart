@@ -43,6 +43,7 @@ class Secondcard extends StatelessWidget {
           decoration: BoxDecoration(
               image: DecorationImage(
                   image: AssetImage("asset/swa.png"), fit: BoxFit.cover)),
+          // child: Image.asset("asset/swa.png"),
         )
       ],
     );
